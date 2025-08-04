@@ -1,24 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Notion-Warp
+
+A modern Next.js application bootstrapped with comprehensive development tooling.
+
+## Features
+
+- **Next.js 15** with App Router and TypeScript
+- **TailwindCSS 4** for styling
+- **ESLint** for code quality
+- **Prettier** for code formatting
+- **Husky + lint-staged** for pre-commit hooks
+- **Commitlint** for conventional commits
+- **Storybook** with Vite for UI component development
+- **Absolute imports** with `@` alias
+- **Vitest** for testing
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
+```
+
+Then, run the development server:
+
+```bash
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Development Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `pnpm dev` - Start the development server
+- `pnpm build` - Build the application for production
+- `pnpm start` - Start the production server
+- `pnpm lint` - Run ESLint
+- `pnpm lint:fix` - Run ESLint with auto-fix
+- `pnpm format` - Format code with Prettier
+- `pnpm format:check` - Check code formatting
+- `pnpm storybook` - Start Storybook development server
+- `pnpm build-storybook` - Build Storybook for production
+
+## Storybook
+
+This project includes Storybook for component development and documentation:
+
+```bash
+pnpm storybook
+```
+
+Open [http://localhost:6006](http://localhost:6006) to view the component library.
+
+## Project Structure
+
+```
+├── src/
+│   ├── app/          # Next.js app directory
+│   └── stories/      # Storybook stories
+├── .storybook/       # Storybook configuration
+├── .husky/           # Git hooks
+└── public/           # Static assets
+```
 
 ## Learn More
 
